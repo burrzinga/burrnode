@@ -246,7 +246,7 @@ spec:
       workspaces:
       - name: sanity-ws
         workspace: workspace
-    - name: hello
+    - name: Burr
       taskSpec:
         steps:
          - name: echo
@@ -254,6 +254,8 @@ spec:
            script: |
              #!/bin/sh
              echo "Hello Burr!"
+      runAfter:
+      - build-container             
     - name: clair-scan
       params:
       - name: image-digest

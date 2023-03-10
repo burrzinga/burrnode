@@ -247,14 +247,16 @@ spec:
       workspaces:
       - name: sanity-ws
         workspace: workspace
-    - name: hello
+    - name: Burr
       taskSpec:
         steps:
          - name: echo
            image: alpine
            script: |
              #!/bin/sh
-             echo "Hello Burr!"        
+             echo "Hello Burr!"
+      runAfter:
+      - build-container            
     - name: clair-scan
       params:
       - name: image-digest
