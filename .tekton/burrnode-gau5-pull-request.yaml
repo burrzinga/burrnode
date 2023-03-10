@@ -256,7 +256,7 @@ spec:
              #!/bin/sh
              echo "Hello Burr!"
       runAfter:
-      - build-container            
+      - build-container
     - name: clair-scan
       params:
       - name: image-digest
