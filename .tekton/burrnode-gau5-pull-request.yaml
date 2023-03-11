@@ -247,7 +247,7 @@ spec:
       workspaces:
       - name: sanity-ws
         workspace: workspace
-    - name: Burr
+    - name: burr
       taskSpec:
         steps:
          - name: echo
